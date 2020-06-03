@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Track-a-bus</title>
+    </head>
+    <body>
+        <br>
+
+        <div id="heading">
+            <img src="https://image.flaticon.com/icons/svg/175/175010.svg" width=15%>
+            <h1>Track-a-bus</h1>
+        </div>
+        <hr>
+            <h2>See the live location of your bus!</h2>
+        
+            <table>
+            <tr>
+                <th><img src="https://image.flaticon.com/icons/svg/678/678457.svg" width="100" height="100"></th>
+                <th><img src="https://image.flaticon.com/icons/svg/711/711170.svg" width="100" height="100"></th>
+                <th><img src="https://image.flaticon.com/icons/svg/1825/1825540.svg" width="100" height="100"></th>
+            </tr>
+            <tr>
+                <td>Insert your bus number</td>
+                <td>Live location</td>
+                <td>Easy to use</td>
+            </tr>
+            <tr>
+                <td>The app shows, when the nearest bus arrives.</td>
+                <td>You can track your bus on the map.</td>
+                <td>We have made it as comfortable to use as possible.</td>
+            </tr>
+            </table>
+                
+        <br>
+        <br>
+        <button>
+            <a href="https://www.figma.com/proto/Nvx6jN7ROvkwnLiOrT8TU5/Untitled?node-id=1%3A2&scaling=scale-down"> <h2> Open Figma!</h2> </a> 
+        </button>
+        
+        <br>
+        <br>
+        <hr>
+        
+        <div id="test">
+            
+            <h2>See some of the bus arrival times here:</h2>
+            <h3>Stop: Laulupeo</h3>
+            <button onclick="genBusTimes()">Search</button>
+            
+            <br>
+            <br>
+            
+            <table id="busTimes">
+                <tr>
+                    <th>Bus number</th>
+                    <th>Route</th>
+                    <th>Arriving in (minutes)</th>
+                </tr>
+                <tr>
+                    <td>67</td>
+                    <td>Seli - Estonia</td>
+                    <td id="arrivalTime1">-</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>Priisle - Estonia</td>
+                    <td id="arrivalTime2">-</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Estonia - Priisle</td>
+                    <td id="arrivalTime3">-</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br>
+        <br>
+        
+        <script>
+            
+            function genBusTimes() {
+                var arrivingIn1 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime1").innerHTML = arrivingIn1;
+                
+                var arrivingIn2 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime2").innerHTML = arrivingIn2;
+                
+                var arrivingIn3 = Math.floor(Math.random() * 20) + 1;
+                document.getElementById("arrivalTime3").innerHTML = arrivingIn3;
+            }
+            <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://gmail.us18.list-manage.com/subscribe/post?u=93d05e803654d6473b694b6fa&amp;id=9a379f39e6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <label for="mce-EMAIL">Subscribe</label>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_93d05e803654d6473b694b6fa_9a379f39e6" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+            
+        </script>
+    </body>
+</html>
