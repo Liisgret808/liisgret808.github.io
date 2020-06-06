@@ -1,0 +1,44 @@
+    font {
+        text-align: center;
+        -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: example1;
+        animation-duration: 0.7s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+		color: #0D0221
+    }
+    	/* Standard syntax */
+        @keyframes example1 {
+        from {color: #0F084B;}
+        to {color: #26408B;}
+        }
+    
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: #C42847;}
+  to {background-color: #DE3C4B;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {width: 40px;}
+  to {width: 50px;}
+  from {font-size: 10px;}
+  to {font-size: 20px;}
+  from {background-color: #C42847;}
+  to {background-color: #DE3C4B;}
+}
+        
+        
+        
+body {
+    text-align: center;
+font-family: 'Saira Stencil One', cursive;
+background-color: #A6CFD5
+}     
+table, th, td {
+            border: 1px solid black;
+         }
